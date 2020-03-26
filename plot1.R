@@ -11,7 +11,7 @@ tabl$Date <- as.Date(tabl$Date,"%d/%m/%Y")
 tabl_subset <- subset(tabl, tabl$Date %in% as.Date(c("2007-02-01","2007-02-02")))
 
 #Initialize the png file
-png("plot1.png",width=400,height=400)
+png("plot1.png",width=480,height=480)
 
 #Create the histogram
 hist(tabl_subset$Global_active_power, main="Global Active Power"
@@ -23,6 +23,3 @@ hist(tabl_subset$Global_active_power, main="Global Active Power"
 dev.off()
 
 
-
-     
-     )
